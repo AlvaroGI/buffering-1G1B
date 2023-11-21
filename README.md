@@ -19,31 +19,26 @@ Here, we have three blocks of code:
 
 # Files
 
-Note that some Matlab scripts may require having the auxiliary folders `_*/` in the Matlab path.
+Note that some Matlab scripts may require having the auxiliary folders (directories that start with `_*`) in the Matlab path.
 
 ---
 
 ### Simulation
 
-#### With constant $p$
+#### With constant $p$:
 
  - `TUTORIAL_simulation_constant_p.m`: example of how to run a simulation and how to visualize the results.
 
  - `TUTORIAL_get_avgfid_constant_p.m`: example of how to run a simulation and how to read the average fidelity files.
 
-Calculations:
 
-Plots:
- - `plotCTMC_1G1B.m` (function): plots the evolution of the states versus time.
- - `plotfidCTMC_1G1B.m` (function): plots the evolution of the fidelity versus time.
-
-#### With fidelity-dependent $p$
+#### With fidelity-dependent $p$:
 
 *** Under construction ***
 
 ---
 
-### Results
+### Results from [our manuscript](https://arxiv.org/abs/2311.10052)
 
  - `MANUSCRIPT_FvsA_linearbounds.m`: plots average consumed fidelity vs availability, considering the upper and lower bounds to the jump function and the success probability derived in our paper (Figure 7).
 
@@ -74,6 +69,8 @@ All auxiliary files are in directories that start with `_*`.
  - `fidCTMC_1G1B.m`: calculates fidelity over time for each sample and saves the data in a file. Requires running `simCTMC_1G1B.m` first.
  - `avgfidCTMC_1G1B.m`: calculates average fidelity over time for each sample and saves the data in a file. Requires running `fidCTMC_1G1B.m` first.
  - `depolarize.m`: returns the fidelity of a Werner state after being stored in memory subject to depolarizing noise.
+ - `plotCTMC_1G1B.m`: plots the evolution of the state (purification level) versus time.
+ - `plotfidCTMC_1G1B.m`: plots the evolution of the fidelity versus time.
 
 `_theory_constant_p/*`:
  - `THEORYavailab_1G1B.m`: returns the (analytical) availability for a given set of parameters. We assume constant $p$.
