@@ -5,8 +5,8 @@ This repository contains all the code used in the project 1G1B (see the arxiv ve
 Here, we have three blocks of code:
 
  1. __SIMULATION__:
-     1.1. When the probability of successful purification ($p$) is constant, we simulate the Markov Chain corresponding to the 1G1B system. Our functions can calculate many samples of the evolution of the state of the system over time. After collecting the samples, we can calculate the fidelity, average fidelity, and standard error, and we can plot all those quantities.
-     1.2. We also simulate the system when the success probability ($p$) is fidelity-dependent (i.e., time-dependent). In this case, each sample directly computes the fidelity over time, since this cannot be done anymore in post-processing.
+     (1.1) When the probability of successful purification ($p$) is constant, we simulate the Markov Chain corresponding to the 1G1B system. Our functions can calculate many samples of the evolution of the state of the system over time. After collecting the samples, we can calculate the fidelity, average fidelity, and standard error, and we can plot all those quantities.
+     (1.2) We also simulate the system when the success probability ($p$) is fidelity-dependent (i.e., time-dependent). In this case, each sample directly computes the fidelity over time, since this cannot be done anymore in post-processing.
 
  2. __RESULTS__: We provide the code used to obtain the results (plots and claims) from our manuscript.
 
