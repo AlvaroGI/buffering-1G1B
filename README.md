@@ -84,13 +84,6 @@ All auxiliary files are in directories that start with `_*`.
  - `simplify_success_prob.m`: simplifies the analytical jump function of every 2-to-1 bilocal Clifford protocol provided by the code from [1].
 
 ---
-
-### Auxiliary files (`aux_functions/*`)
-
-Analytical functions:
-
-
----
 ---
 
 
