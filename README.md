@@ -4,13 +4,14 @@ This repository contains all the code used in the project 1G1B (see the arxiv ve
 
 Here, we have three blocks of code:
 
- 1. Simulation of the 1G1B system.
-  1.1. When the probability of successful purification ($p$) is constant, we simulate the Markov Chain corresponding to the 1G1B system. Our functions can calculate many samples of the evolution of the state of the system over time. After collecting the samples, we can calculate the fidelity, average fidelity, and standard error, and we can plot all those quantities.
-  1.2. We also simulate the system when the success probability ($p$) is fidelity-dependent (i.e., time-dependent). In this case, each sample directly computes the fidelity over time, since this cannot be done anymore in post-processing.
+ 1. __SIMULATION__:
+     1.1. When the probability of successful purification ($p$) is constant, we simulate the Markov Chain corresponding to the 1G1B system. Our functions can calculate many samples of the evolution of the state of the system over time. After collecting the samples, we can calculate the fidelity, average fidelity, and standard error, and we can plot all those quantities.
+     1.2. We also simulate the system when the success probability ($p$) is fidelity-dependent (i.e., time-dependent). In this case, each sample directly computes the fidelity over time, since this cannot be done anymore in post-processing.
 
- 2. Analysis of bilocal Clifford protocols. We analyze the jump functions of all bilocal Clifford protocols using the code from Jansen et al. [1]. We label the pieces of code that are from [1].
+ 2. __RESULTS__: We provide the code used to obtain the results (plots and claims) from our manuscript.
 
- 3. We provide the code used to obtain the results (plots and claims) from our manuscript.
+ 3. __BILOCAL CLIFFORD PROTOCOLS__: We analyze the jump functions of all bilocal Clifford protocols using the code from Jansen et al. [1]. We label the pieces of code that are from [1].
+
 
 [1] Sarah Jansen, Kenneth Goodenough, Sébastian de Bone, Dion Gijswijt, and David Elkouss. Enumerating all bilocal Clifford distillation protocols through symmetry reduction. Quantum 6 (2022), 715.
 
@@ -23,7 +24,7 @@ Note that some Matlab scripts may require having the auxiliary folders (director
 
 ---
 
-### Simulation
+### SIMULATION
 
 #### With constant $p$:
 
@@ -38,7 +39,7 @@ Note that some Matlab scripts may require having the auxiliary folders (director
 
 ---
 
-### Results from [our manuscript](https://arxiv.org/abs/2311.10052)
+### RESULTS from [our manuscript](https://arxiv.org/abs/2311.10052)
 
  - `MANUSCRIPT_FvsA_linearbounds.m`: plots average consumed fidelity vs availability, considering the upper and lower bounds to the jump function and the success probability derived in our paper (Figure 7).
 
@@ -48,7 +49,7 @@ Note that some Matlab scripts may require having the auxiliary folders (director
 
 ---
 
-### Bilocal Clifford protocols
+### BILOCAL CLIFFORD PROTOCOLS
 
 The following files were used to study the jump function and success probability of all 2-to-1 bilocal Clifford protocols. They require running `Jansen2022_get_all_circuits_1G1B.ipynb` first.
  - `_bilocal_cliffords/ANALYSIS_protocols_FandP.m`: plots output fidelity vs success probability of every 2-to-1 bilocal Clifford protocol, for given input states.
