@@ -1,6 +1,6 @@
 # Entanglement buffering with 1G1B (one good memory, one bad memory)
 
-This repository contains all the code used in the project 1G1B (see the arxiv version of our manuscript [here](https://arxiv.org/abs/2311.10052)).
+This repository contains all the code used in the project 1G1B (see the arxiv version of our manuscript at [arXiv:2311.10052](https://arxiv.org/abs/2311.10052)).
 
 Here, we have three blocks of code:
 
